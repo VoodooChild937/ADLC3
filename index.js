@@ -7,6 +7,7 @@ const PORT = parseInt(process.env.PORT) || 3000
 // Create an instance of express
 const app = express()
 
+app.use(express.static(__dirname + '/static'))
 app.listen(PORT, () => {
     console.info('Application started on port ${PORT} at ${new Data()}')
 })
